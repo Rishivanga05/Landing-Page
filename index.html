@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        header a {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #fff;
+            color: #2575fc;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: 0.3s;
+        }
+
+        header a:hover {
+            background: #f0f0f0;
+        }
+
+        /* Features Section */
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 60px 20px;
+            background: #f9f9f9;
+        }
+
+        .feature-card {
+            background: #fff;
+            padding: 30px;
+            margin: 15px;
+            flex: 1 1 250px;
+            max-width: 300px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-card h3 {
+            margin-bottom: 15px;
+            color: #2575fc;
+        }
+
+        /* Call to Action */
+        .cta {
+            background: linear-gradient(135deg, #2575fc, #6a11cb);
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .cta a {
+            padding: 15px 40px;
+            background: #fff;
+            color: #2575fc;
+            font-weight: bold;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .cta a:hover {
+            background: #f0f0f0;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        @media(max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            .cta h2 {
+                font-size: 2rem;
+            }
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Our Landing Page</h1>
+        <p>Build your dream projects with simplicity and style. Start your journey today!</p>
+        <a href="#features">Get Started</a>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="feature-card">
+            <h3>Fast & Responsive</h3>
+            <p>Our platform is optimized for all devices with a sleek, responsive design.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Easy to Use</h3>
+            <p>Simple and intuitive interface designed for beginners and professionals alike.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Modern Design</h3>
+            <p>Stylish components and layouts with gradient colors and interactive hover effects.</p>
+        </div>
+    </section>
+
+    <!-- Call To Action Section -->
+    <section class="cta">
+        <h2>Start Building Your Project Today</h2>
+        <a href="#">Join Now</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
